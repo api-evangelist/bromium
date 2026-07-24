@@ -1,24 +1,65 @@
 aid: bromium
 name: Bromium
-description: Bromium is a company surfaced as a portfolio company of a16z, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Bromium was an endpoint-security company founded in 2010 that pioneered
+  application isolation through hardware-enforced micro-virtualization,
+  running each untrusted task (a web page, email attachment, or downloaded
+  file) inside its own disposable CPU-level micro-VM so malware could not
+  escape to the host. Bromium was surfaced as a portfolio company of a16z
+  and Lightspeed Venture Partners. Hewlett-Packard (HP Inc.) acquired
+  Bromium in September 2019 and folded the micro-virtualization technology
+  into HP Sure Click and the HP Wolf Security endpoint-protection line;
+  bromium.com now permanently redirects to HP's endpoint-security pages.
+  Bromium no longer operates as an independent entity and publishes no
+  standalone public developer API, so this profile carries company identity
+  only rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/bromium/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
 - lightspeed-venture-partners
+x-status: acquired
+x-acquired-by: HP Inc.
+x-acquired-date: '2019-09'
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.hp.com/us-en/security/endpoint-security-solutions.html
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Security
+- Endpoint Security
+- Cybersecurity
+- Micro-virtualization
+- Application Isolation
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://www.hp.com/us-en/security/endpoint-security-solutions.html
+- type: Company
+  url: https://www.hp.com/us-en/security/endpoint-security-solutions.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
